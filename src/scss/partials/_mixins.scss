@@ -66,10 +66,14 @@
 // End Typography
 
 // *** SECTIONS *** //
-@mixin section-first{
+@mixin section-setup{
   @include flex-col;
   @include text-center;
+}
 
+@mixin section-first{
+  @include section-setup;
+  
   .images-row{
     @include flex-row;
     justify-content: space-between;

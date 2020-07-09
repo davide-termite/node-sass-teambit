@@ -86,6 +86,7 @@ nav {
   justify-content: space-between;
   height: 80px;
   background-color: #fff;
+  z-index: 1000000;
 }
 
 nav .logo {
@@ -311,5 +312,59 @@ nav .navbar a {
 #surveys .text .sub-img img,
 #help .text .sub-img img {
   width: 100%;
+}
+
+#founders {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#founders h2 {
+  font-size: 60px;
+}
+
+#founders .founder-box {
+  position: relative;
+  margin: 60px auto;
+  width: 50%;
+  background-color: #fff;
+  border: 2px solid #2d4792;
+  border-radius: 15px;
+}
+
+#founders .founder-box i {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  color: #2d4792;
+  font-size: 30px;
+}
+
+#founders .founder-box p {
+  padding: 15px;
+  text-align: left;
+}
+
+#founders .founder-box .founder-pics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+
+#founders .founder-box .founder-pics img {
+  width: 80%;
+}
+
+#founders .founder-box .founder-pics .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  text-align: left;
+}
+
+#founders .founder-box .founder-pics .text .names {
+  color: #2d4792;
 }
 

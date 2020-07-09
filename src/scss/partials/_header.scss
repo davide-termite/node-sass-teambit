@@ -6,6 +6,7 @@ nav {
   justify-content: space-between;
   height: $nav_height;
   background-color: $secundary_color;
+  z-index: 1000000;
 
   .logo{
     flex-basis: 50%;
