@@ -1,0 +1,41 @@
+footer{
+  .container{
+    @include flex-row;
+    margin-top: 50px;
+
+    .text{
+      @include flex-row;
+      width: 20%;
+
+      p{
+        span{
+          color: $accent;
+          font-weight: $main_text_weigth;
+        }
+        margin-left: 10px;
+      }
+    }
+    .lists{
+      @include flex-row;
+    };
+
+    ul{
+      @include reset-list;
+      margin: 0 50px;
+      color: $main_text_color;
+
+      li{
+        margin: 15px 0;
+
+        &:hover a{
+          color: #000;
+          transition: 0.2s;
+        }
+
+        a{
+          @include reset-link;
+        }
+      }
+    }
+  }
+}

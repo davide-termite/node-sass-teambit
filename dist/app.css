@@ -368,3 +368,50 @@ nav .navbar a {
   color: #2d4792;
 }
 
+footer .container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+footer .container .text {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+}
+
+footer .container .text p {
+  margin-left: 10px;
+}
+
+footer .container .text p span {
+  color: #2d4792;
+  font-weight: 800;
+}
+
+footer .container .lists {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 50px;
+  color: #58402d;
+}
+
+footer .container ul li {
+  margin: 15px 0;
+}
+
+footer .container ul li:hover a {
+  color: #000;
+  transition: 0.2s;
+}
+
+footer .container ul li a {
+  text-decoration: none;
+}
+
