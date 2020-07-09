@@ -1,0 +1,41 @@
+// Mixin Flex
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-col{
+  display: flex;
+  flex-direction: column;
+}
+// End Mixin Flex
+
+@mixin fixed-nav{
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 80%;
+}
+
+@mixin reset-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+}
+
+@mixin button{
+  background-color: $accent;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: $main_text_weigth;
+}
+
+@mixin button-logos{
+  width: 15px;
+  margin-right: 5px;
+}

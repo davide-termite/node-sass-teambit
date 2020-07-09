@@ -1,0 +1,27 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+// End Reset
+
+// Layout Common
+body{
+  margin-top: $nav_height;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.primary{
+  background-color: $primary_color;
+}
+
+.secundary{
+  background-color: $secundary_color;
+}
+// End Layout Common
