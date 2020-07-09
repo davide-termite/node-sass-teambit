@@ -24,4 +24,42 @@ body{
 .secundary{
   background-color: $secundary_color;
 }
+
+section{
+  padding: 50px 0;
+}
+
+h2{
+  margin-bottom: 50px;
+  color: $main_text_color;
+  font-size: 30px;
+  font-weight: $main_text_weigth;
+}
+
+hr{
+  color: $main_text_color;
+}
+
+.cta{
+  @include cta-text;
+}
+
 // End Layout Common
+
+// Buttons Styling
+.btn{
+  @include reset-link;
+  color: $secundary_color;
+
+  @include button;
+
+  img{
+    @include button-logos;
+  }
+
+  &:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+}
+// End Buttons Styling

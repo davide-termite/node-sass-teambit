@@ -13,10 +13,11 @@
 @mixin fixed-nav{
   position: fixed;
   top: 0;
-  left: 10%;
-  width: 80%;
+  padding: 0 10%;
+  width: 100%;
 }
 
+// Resets
 @mixin reset-list{
   margin: 0;
   padding: 0;
@@ -26,7 +27,9 @@
 @mixin reset-link {
   text-decoration: none;
 }
+// End Resets
 
+// Buttons
 @mixin button{
   background-color: $accent;
   padding: 10px 15px;
@@ -39,3 +42,93 @@
   width: 15px;
   margin-right: 5px;
 }
+// End Buttons
+
+// Typography
+@mixin cta-text{
+  @include reset-link;
+  display: block;
+  margin-top: 30px;
+  color: $main_text_color;
+
+  &:hover{
+    text-decoration: underline;
+  }
+
+  &:hover i{
+    margin-left: 15px;
+    transition: 0.2s;
+  }
+}
+@mixin text-center{
+  text-align: center;
+}
+// End Typography
+
+// *** SECTIONS *** //
+@mixin section-first{
+  @include flex-col;
+  @include text-center;
+
+  .images-row{
+    @include flex-row;
+    justify-content: space-between;
+
+    .card img{
+      height: 120px;
+    }
+
+    .card p{
+      margin: 50px 0;
+    }
+  }
+
+  .image-full-row{
+    padding: 50px 0;
+
+    img {
+      height: 350px;
+      margin: 60px 0;
+    }
+  }
+}
+
+@mixin section-wide{
+  @include flex-row;
+  width: 100%;
+
+  .image-container{
+    width: 50%;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .text{
+    @include flex-col;
+    width: 25%;
+
+    h2{
+      font-size: 40px;
+    }
+
+    p{
+      font-size: 25px;
+      color: $main_text_color;
+    }
+
+    a{
+      color: $accent;
+      font-size: 30px;
+    }
+    .sub-img{
+      margin-top: 50px;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+// *** END SECTIONS *** //

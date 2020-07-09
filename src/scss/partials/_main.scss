@@ -1,0 +1,20 @@
+#before{
+  @include section-first;
+
+  .image-full-row{
+    border-bottom: 1px solid $main_text_color;
+  }
+}
+
+#after{
+  @include section-first;
+}
+
+#feedback, #reviews{
+  @include section-wide;
+}
+
+#surveys, #help{
+  @include section-wide;
+  flex-direction: row-reverse;
+}
